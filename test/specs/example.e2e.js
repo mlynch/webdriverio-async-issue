@@ -6,7 +6,7 @@ describe('My Example', () => {
       const h2 = await $('#hi');
       await h2.waitForDisplayed({ timeout: 5000 });
 
-      await (await expect(h2)).toHaveText('Hello');
+      await expect(h2).toHaveText('Hello');
     });
 });
 
